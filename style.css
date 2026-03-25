@@ -11,7 +11,6 @@ body {
     align-items: center;
     min-height: 100vh;
     
-    /* FONDO DE PLANOS Y LÁPIZ (Calidad HD) */
     background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), 
                 url('https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?q=80&w=2070&auto=format&fit=crop');
     background-size: cover;
@@ -20,48 +19,28 @@ body {
     background-repeat: no-repeat;
 }
 
-/* Modifica la .card para que se vea más traslúcida sobre el plano */
-.card {
-    background: rgba(255, 255, 255, 0.7); /* Esto le da el toque de cristal */
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    width: 90%;
-    max-width: 400px;
-    padding: 40px 30px;
-    border-radius: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
 
 .card {
-    
     background: rgba(255, 255, 255, 0.4); 
     backdrop-filter: blur(10px); 
     -webkit-backdrop-filter: blur(10px);
-    
-    width: 90%;
-    max-width: 400px;
-    padding: 50px 30px;
-    border-radius: 25px; 
-    
-   
+    width: 90%;        
+    max-width: 400px;     
+    padding: 30px;     
+    border-radius: 25px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    
-   
     border: 1px solid rgba(255, 255, 255, 0.2);
-    
     text-align: center;
 }
 
 .logo-img {
     width: 90%;            
-    max-width: 380px;      
-    height: auto;          
-    margin-bottom: 25px;   
-    display: block;      
-    margin-left: auto;    
-    margin-right: auto;   
+    max-width: 250px;   
+    height: auto;     
+    margin-bottom: 20px;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
 }
 p {
     color: var(--azul-oscuro);
@@ -71,6 +50,8 @@ p {
     line-height: 1.5;
 }
 
+
+
 .btn {
     display: flex;
     align-items: center;
@@ -78,18 +59,18 @@ p {
     background: var(--blanco);
     color: var(--azul-oscuro);
     text-decoration: none;
-    padding: 20px 25px;
-    margin-bottom: 15px;
+    padding: 15px 20px;    
+    margin-bottom: 12px;
     border-radius: 12px;
     font-weight: 800;
-    font-size: 16px;
+    font-size: 15px;   
     text-transform: uppercase;
     letter-spacing: 1px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    
-    border: 2px solid transparent; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    border: 2px solid transparent;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .btn:hover, .btn:active {
     background-color: var(--blanco); 
     color: #00a3e0;
@@ -99,4 +80,17 @@ p {
 }
 .btn:hover .icon, .btn:active .icon {
     color: #00a3e0;
+}
+
+@media (max-width: 350px) {
+    p {
+        font-size: 13px;
+    }
+    .btn {
+        font-size: 13px; 
+        padding: 12px 15px;
+    }
+    .icon {
+        font-size: 18px; 
+    }
 }
