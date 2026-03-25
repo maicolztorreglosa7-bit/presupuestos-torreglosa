@@ -3,8 +3,6 @@
     --blanco: #ffffff;
     --azul-fondo-claro: #d6eef8; 
 }
-
-
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
@@ -12,20 +10,29 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-                url('https://images.unsplash.com/photo-1503387762-592dee58c460?auto=format&fit=crop&q=80&w=1920');
+    
+    /* FONDO DE PLANOS Y LÁPIZ (Calidad HD) */
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), 
+                url('https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?q=80&w=2070&auto=format&fit=crop');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-}
-.card {
-    background: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-   
+    background-repeat: no-repeat;
 }
 
+/* Modifica la .card para que se vea más traslúcida sobre el plano */
+.card {
+    background: rgba(255, 255, 255, 0.7); /* Esto le da el toque de cristal */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 90%;
+    max-width: 400px;
+    padding: 40px 30px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
 
 .card {
     
